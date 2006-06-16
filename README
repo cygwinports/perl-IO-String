@@ -1,0 +1,65 @@
+perl-IO-String
+--------------------------------------------
+IO::String is an IO::File (and IO::Handle) compatible class that read
+or write data from in-core strings.  It is really just a
+simplification of Eryq's IO-stringy modules.  As such IO::String is a 
+replacement for IO::Scalar.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  perl-5.8.7-5
+
+Build requirements:
+  cygwin-1.5.19-4
+  cygport-0.1.92-1
+  make-3.80-1
+  perl-5.8.7-5
+
+Canonical homepage:
+  http://search.cpan.org/~gaas/IO-String/
+
+Canonical download:
+  http://www.cpan.org/authors/id/G/GA/GAAS/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-IO-String-1.08-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-IO-String-1.08-X.cygport all
+
+This will create:
+  /usr/src/perl-IO-String-1.08-X-src.tar.bz2
+  /usr/src/perl-IO-String-1.08-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/perl-IO-String.sh
+  /usr/lib/perl5/vendor_perl/5.8/IO/String.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/IO/String/.packlist
+  /usr/share/doc/Cygwin/perl-IO-String-1.08.README
+  /usr/share/doc/perl-IO-String-1.08/Changes
+  /usr/share/doc/perl-IO-String-1.08/README
+  /usr/share/man/man3/IO.String.3pm.gz
+  /usr/share/perl/cygwin-pods/5.8/IO-String.pod
+
+------------------
+
+Port Notes:
+
+----- version 1.08-1 -----
+Version bump.
+
+----- version 1.05-2 -----
+Rebuilt for perl-5.8.6.
+
+----- version 1.05-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
